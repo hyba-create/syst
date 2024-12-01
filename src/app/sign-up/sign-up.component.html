@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animated Registre Form</title>
+	
+</head>
+<body>
+	<div class="box">
+		<form autocomplete="off">
+			<h2>Sign Up</h2>
+            <table>
+                <tr><td>
+			<div class="inputBox">
+				<input [(ngModel)]="user.UserName" type="text" name="UserName"required="required">
+				<span>Username</span>
+				<i></i>
+			</div>
+            <div class="inputBox">
+				<input [(ngModel)]="user.Familyname" type="text" name="Familyname"required>
+				<span>Familyname</span>
+				<i></i>
+			</div>
+        </td><td>
+            <div class="inputBox">
+				<input [(ngModel)]="user.Birthday" type="date" name="Birthday"required style="color: transparent;">
+				<span>Birthday</span>
+				<i></i>
+			</div>
+            <div class="inputBox">
+				<input [(ngModel)]="user.E_Mail" type="email" name="E_Mail" required>
+				<span>E_Mail</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input  [(ngModel)]="user.password" type="password" name="Password" required>
+				<span>Password</span>
+				<i></i>
+			</div>
+            <div class="inputBox">
+				<input [(ngModel)]="user.confirme_password" type="password" name="Confirme_Password" required>
+				<span>Confirme Password</span>
+				<i></i>
+			</div>
+             </td></tr>
+            </table>
+            <br><br>
+			<div class="links">
+				<a href="#">Forgot Password ?</a>
+			</div>
+			<input type="submit" value="Login" (click)="ajout()">
+			
+				
+			
+			
+            
+       
+		</form>
+        
+	</div>
+ 
+</body>
+</html>

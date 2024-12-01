@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            <img src="./assets/iobeya2.png" class="logo">
+            <ul class="links">
+                <li><a routerLink="/Home">Home</a></li>
+                <!-- <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li> -->
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+      </header>
+      <br> <br> <br> 
+      <div class="icon-arrow"><a routerLink="/Home"><img src="./assets/fleche.png"></a></div>
+<!-- Services -->
+<div class="container">
+    <!-- Service -->
+    <div class="services">
+        <div class="service">
+            <div class="container">
+                <input type="file" class="upload_hide"  (change)="selectFile($event)" id="upload_costum" multiple>
+                
+                <label for="upload_costum"  class="upload_label">
+                    <img src="./assets/drive.png" alt="Google Drive Icon">
+                    <p class="drag_text">Upload File to our GoogleD rive</p>
+                </label>
+               
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <input class="button" type="button" value="Upload" (click)=" ajout()">
+                
+               
+            </div>
+            
+           
+             
+           
+        </div>
+    </div>
+</div>
+</body>
+</html>
